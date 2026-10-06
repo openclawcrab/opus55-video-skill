@@ -1,0 +1,83 @@
+# Fashion Video Skill for Claude Code
+
+> A Claude Code skill that turns a fashion brief into a finished 6 to 15 second brand film: picture, motion, music and sound effects, all made in code. 22 styles, landscape and vertical. Built and tested with Claude Opus 5.5.
+
+Fashion Video Skill (v2.0.2) is installed into Claude Code. Give Claude a brand, a product and a platform; the skill plans the film from that content, draws every frame in headless Chrome, composes music and sound effects, and checks the result (duration, size, loudness at -14 LUFS, true peak, clipped or overlapping text) before handing over an MP4. Output sizes: 16:9, 9:16, 4:5 and 1:1. Recommended model: Claude Opus 5.5; every example film on the site was made with it.
+
+## Product
+- [Sales page](https://opus55-video.solosoft.dev/): what the skill does, all 44 example films, FAQ
+- [Buy the skill](https://solopreneurhub.lemonsqueezy.com/checkout/buy/5fbdea48-cfb0-4d93-8926-11023d5ee7a0): checkout on Lemon Squeezy
+- [Full content for AI](https://opus55-video.solosoft.dev/llms-full.txt): every style, every example film and the FAQ in plain text
+
+## The 22 styles (style name, `--style` id)
+- Editorial Cover Motion (`editorial`): fashion style
+- Runway Strobe (`runway`): fashion style
+- Grid Lookbook (`lookbook`): fashion style
+- Luxury Product Reveal (`luxury`): fashion style
+- Silk & Fabric Flow (`silk`): fashion style
+- Streetwear Drop (Y2K) (`drop`): fashion style
+- Atelier Moodboard (`atelier`): fashion style
+- Flat / Vector 2D (`flat-vector`): motion design style
+- Line Art (`line-art`): motion design style
+- Isometric 2.5D (`isometric`): motion design style
+- 3D Render (C4D look) (`3d-render`): motion design style
+- Frame-by-Frame / Line Boil (`cel-boil`): motion design style
+- Collage / Cut-out (`collage`): motion design style
+- Liquid Motion (`liquid`): motion design style
+- Shape Morph (`morph`): motion design style
+- Geometric / Bauhaus (`bauhaus`): motion design style
+- 80s Synthwave / VHS / Y2K (`synthwave`): motion design style
+- Aurora & Glassmorphism (`aurora-glass`): motion design style
+- Variety Captions (9:16) (`hanazi`): motion design style
+- Sticker Explainer (`explainer`): motion design style
+- Pixel Art / 8-bit (`pixel`): motion design style
+- Cyberpunk HUD / FUI (`hud`): motion design style
+
+## Example films (one landscape and one vertical per style)
+- [Editorial Cover Motion, landscape 16:9: KESTRINE, Model 04 tortoise sunglasses](https://opus55-video.solosoft.dev/media/editorial-16x9.mp4)
+- [Editorial Cover Motion, vertical 9:16: VELLASTRE, Cobalt suede knee-high boot](https://opus55-video.solosoft.dev/media/editorial-9x16.mp4)
+- [Runway Strobe, landscape 16:9: NEBRISSE, AW27 storm coats](https://opus55-video.solosoft.dev/media/runway-16x9.mp4)
+- [Runway Strobe, vertical 9:16: VERMIRRE, Evening gowns, 2028](https://opus55-video.solosoft.dev/media/runway-9x16.mp4)
+- [Grid Lookbook, landscape 16:9: NIMBREL, Rain Shell 02 jacket in four colours](https://opus55-video.solosoft.dev/media/lookbook-16x9.mp4)
+- [Grid Lookbook, vertical 9:16: VELLISAND, The Sunday Look, a linen summer outfit](https://opus55-video.solosoft.dev/media/lookbook-9x16.mp4)
+- [Luxury Product Reveal, landscape 16:9: OSTREVANE, Orvalen 38 dress watch](https://opus55-video.solosoft.dev/media/luxury-16x9.mp4)
+- [Luxury Product Reveal, vertical 9:16: ISQUELLE, Garnet Hour No. 07 satin lipstick](https://opus55-video.solosoft.dev/media/luxury-9x16.mp4)
+- [Silk & Fabric Flow, landscape 16:9: SELVORNE, The Nightfall Set silk pyjamas](https://opus55-video.solosoft.dev/media/silk-16x9.mp4)
+- [Silk & Fabric Flow, vertical 9:16: TESSARINE, Silk twill scarves](https://opus55-video.solosoft.dev/media/silk-9x16.mp4)
+- [Streetwear Drop (Y2K), landscape 16:9: KESSOLT, Transit Sling crossbody bag](https://opus55-video.solosoft.dev/media/drop-16x9.mp4)
+- [Streetwear Drop (Y2K), vertical 9:16: NYRDAL, Hazard Puffer jacket](https://opus55-video.solosoft.dev/media/drop-9x16.mp4)
+- [Atelier Moodboard, landscape 16:9: MAUDRELL, The Moss Fedora, wool felt](https://opus55-video.solosoft.dev/media/atelier-16x9.mp4)
+- [Atelier Moodboard, vertical 9:16: BRISQUEL, The Tidewater Crew merino sweater](https://opus55-video.solosoft.dev/media/atelier-9x16.mp4)
+- [Flat / Vector 2D, landscape 16:9: PLASHLING, Kids' rain coats and boots](https://opus55-video.solosoft.dev/media/flat-vector-16x9.mp4)
+- [Flat / Vector 2D, vertical 9:16: SOCKROBAT, Patterned novelty socks](https://opus55-video.solosoft.dev/media/flat-vector-9x16.mp4)
+- [Line Art, landscape 16:9: MERQUELLE, Frame 04 'Amber Sun' round sunglasses](https://opus55-video.solosoft.dev/media/line-art-16x9.mp4)
+- [Line Art, vertical 9:16: SEVRINTH, Iris 31 Eau de Parfum](https://opus55-video.solosoft.dev/media/line-art-9x16.mp4)
+- [Isometric 2.5D, landscape 16:9: TUFTHOLLOW, The Fellside Crew knit sweater](https://opus55-video.solosoft.dev/media/isometric-16x9.mp4)
+- [Isometric 2.5D, vertical 9:16: SHADELOFT, A sunglasses pop-up store](https://opus55-video.solosoft.dev/media/isometric-9x16.mp4)
+- [3D Render (C4D look), landscape 16:9: QUELLMAR, Amber Hour sunglasses](https://opus55-video.solosoft.dev/media/3d-render-16x9.mp4)
+- [3D Render (C4D look), vertical 9:16: POMMARU, Jelly Lip Color lipsticks](https://opus55-video.solosoft.dev/media/3d-render-9x16.mp4)
+- [Frame-by-Frame / Line Boil, landscape 16:9: PLINKWELL, The Plink Boot, kids' rain boot](https://opus55-video.solosoft.dev/media/cel-boil-16x9.mp4)
+- [Frame-by-Frame / Line Boil, vertical 9:16: SCRAWLHOP, Hand-painted canvas low-top sneakers](https://opus55-video.solosoft.dev/media/cel-boil-9x16.mp4)
+- [Collage / Cut-out, landscape 16:9: KESTROVI, SS27 sunglasses capsule](https://opus55-video.solosoft.dev/media/collage-16x9.mp4)
+- [Collage / Cut-out, vertical 9:16: RATTLEWICK, The B-Side selvedge denim chore jacket](https://opus55-video.solosoft.dev/media/collage-9x16.mp4)
+- [Liquid Motion, landscape 16:9: POURELLE, The Melt Edit nail lacquers](https://opus55-video.solosoft.dev/media/liquid-16x9.mp4)
+- [Liquid Motion, vertical 9:16: KESSMIRA, Night Oil face oil](https://opus55-video.solosoft.dev/media/liquid-9x16.mp4)
+- [Shape Morph, landscape 16:9: OPHRASTINE, Green Fig Eau de Parfum](https://opus55-video.solosoft.dev/media/morph-16x9.mp4)
+- [Shape Morph, vertical 9:16: HATTERLUNE, The Forecast Edit hats](https://opus55-video.solosoft.dev/media/morph-9x16.mp4)
+- [Geometric / Bauhaus, landscape 16:9: TRIKANT, Three leather bags](https://opus55-video.solosoft.dev/media/bauhaus-16x9.mp4)
+- [Geometric / Bauhaus, vertical 9:16: ZEIGRAD, Model 01 wristwatch](https://opus55-video.solosoft.dev/media/bauhaus-9x16.mp4)
+- [80s Synthwave / VHS / Y2K, landscape 16:9: HALVEXA, Mirror-lens gold wire-frame sunglasses](https://opus55-video.solosoft.dev/media/synthwave-16x9.mp4)
+- [80s Synthwave / VHS / Y2K, vertical 9:16: QUARZENO, Chrome LCD wrist chronograph](https://opus55-video.solosoft.dev/media/synthwave-9x16.mp4)
+- [Aurora & Glassmorphism, landscape 16:9: SOLVETTA, ARC-04 photochromic titanium eyewear](https://opus55-video.solosoft.dev/media/aurora-glass-16x9.mp4)
+- [Aurora & Glassmorphism, vertical 9:16: MOSSVANE, Understory Eau de Parfum 50 ml](https://opus55-video.solosoft.dev/media/aurora-glass-9x16.mp4)
+- [Variety Captions (9:16), landscape 16:9: SLOSHBY, Rain boots, put through the puddle test](https://opus55-video.solosoft.dev/media/hanazi-16x9.mp4)
+- [Variety Captions (9:16), vertical 9:16: PLUMQUEE, Stripe Tint: three shades in one stick](https://opus55-video.solosoft.dev/media/hanazi-9x16.mp4)
+- [Sticker Explainer, landscape 16:9: HALDRUE, Storm Shell 3L rain jacket: how a three-layer shell breathes](https://opus55-video.solosoft.dev/media/explainer-16x9.mp4)
+- [Sticker Explainer, vertical 9:16: BRUMEHALL, Eau de Parfum: how one spray unfolds over eight hours](https://opus55-video.solosoft.dev/media/explainer-9x16.mp4)
+- [Pixel Art / 8-bit, landscape 16:9: HOPVOLT, JUMP-1 sneaker](https://opus55-video.solosoft.dev/media/pixel-16x9.mp4)
+- [Pixel Art / 8-bit, vertical 9:16: MOSSVELLE, NIGHT BLOOM eau de parfum](https://opus55-video.solosoft.dev/media/pixel-9x16.mp4)
+- [Cyberpunk HUD / FUI, landscape 16:9: GLIMVANE, Photochromic snow goggle for every light](https://opus55-video.solosoft.dev/media/hud-16x9.mp4)
+- [Cyberpunk HUD / FUI, vertical 9:16: RASKLEN, KR-7 Trail running shoe, spec by spec](https://opus55-video.solosoft.dev/media/hud-9x16.mp4)
+
+## Optional
+- [Sitemap](https://opus55-video.solosoft.dev/sitemap.xml)
